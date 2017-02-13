@@ -2,7 +2,7 @@ import random
 
 
 def quicksort(unsorted):
-    print('Sorting {}'.format(unsorted))
+    print(f'Sorting {unsorted}')
 
     if len(unsorted) > 1:
         pivot = partition(unsorted)
@@ -17,7 +17,7 @@ def partition(target):
     pivot = len(target) - 1
 
     while left < pivot:
-        print('Partitioning {}'.format(target))
+        print(f'Partitioning {target}, pivoting on {target[pivot]} and comparing with {target[left]}')
 
         if target[left] > target[pivot]:
             target[pivot - 1], target[pivot] = target[pivot], target[pivot - 1]

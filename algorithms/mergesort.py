@@ -2,7 +2,7 @@ import random
 
 
 def mergesort(unsorted):
-    print('Sorting {}'.format(unsorted))
+    print(f'Sorting {unsorted}')
 
     if len(unsorted) > 1:
         midpoint = len(unsorted) // 2
@@ -14,7 +14,7 @@ def mergesort(unsorted):
 
 
 def merge(left, right):
-    print('Merging {} and {}'.format(left, right))
+    print(f'Merging {left} and {right}')
 
     merged = []
     while True:
